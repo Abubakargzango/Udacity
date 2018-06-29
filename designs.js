@@ -12,16 +12,11 @@ var height, width, color;
 			height = $("#inputHeight").val(); //this calls the input of the height
 			width = $("#inputWeight").val(); //this calls the input of the weight(width)
 			makeGrid(height, width);
-			//console.log("Height: " height + "and width: " + width); this was done tp test if the code above is valid
-
 		})
 //the makeGrid function is developed below
 	function makeGrid(x,y){
 		$("tr").remove();
-
-
 // codes for the makeGrid() function goes here!
-
 		for (var i = 1; i <= x; i++){
 			$("#pixelCanvas").append(<"tr id=table" + i + "></tr>");
 			for (var j = 1; j <= y; j++){
